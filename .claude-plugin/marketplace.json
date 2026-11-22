@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "linkedin-agent-skill-de",
+  "description": "LinkedIn agent skill pack for Claude, German edition",
+  "owner": {
+    "name": "Jake Schincariol",
+    "url": "https://opusjake.ai"
+  },
+  "plugins": [
+    {
+      "name": "linkedin-agent-de",
+      "description": "Deutsche Fassung: elf Claude-Skills für LinkedIn auf Deutsch - Posts mit 21 Hook-Formeln, Kommentare, Antworten, Profil-Score, Wochenplan, DMs (Du/Sie), Postfach, Karussells, Weiterverwertung, Audits und ein deutscher Humanizer mit Fünf-Punkte-Panel. Basierend auf linkedin-agent von Jake Schincariol (MIT).",
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://opusjake.ai/r/linkedin-agent"
+    }
+  ]
+}

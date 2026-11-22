@@ -1,0 +1,67 @@
+{
+  "version": "1.0-de",
+  "total": 100,
+  "note": "Zwölf Punkte. Ehrlich bewerten, eine großzügige Bewertung hilft niemandem. Die meisten Profile landen im ersten Durchgang bei 30 bis 45.",
+  "items": [
+    {
+      "id": "headline",
+      "points": 12,
+      "full_marks": "Sagt, wem du hilfst und was sich für sie ändert, enthält einen Beleg und ist nicht der Jobtitel. Nutzt die 220 Zeichen, nicht 60."
+    },
+    {
+      "id": "about_open",
+      "points": 10,
+      "full_marks": "Die ersten zwei Zeilen (alles vor 'mehr anzeigen') benennen das Problem des Lesers. Kein 'mit Leidenschaft', keine Bio in der dritten Person, nicht mit dem eigenen Namen anfangen."
+    },
+    {
+      "id": "about_body",
+      "points": 10,
+      "full_marks": "An eine Person geschrieben, in einer Anrede (Du oder Sie, nicht gemischt): ihr Problem, was du tust, eine Zahl als Beleg, was als Nächstes zu tun ist. Unter 1.600 Zeichen."
+    },
+    {
+      "id": "featured",
+      "points": 8,
+      "full_marks": "Abschnitt 'Im Fokus' mit drei Einträgen: bester Post, ein Beleg, der Kontaktweg. Nichts leer, nichts veraltet."
+    },
+    {
+      "id": "banner",
+      "points": 6,
+      "full_marks": "Eine Zeile Positionierung und ein Kontaktweg. Nicht der Standard-Verlauf, keine Stock-Skyline."
+    },
+    {
+      "id": "photo",
+      "points": 6,
+      "full_marks": "Gesicht füllt etwa 60 % des Bildes, Augen sichtbar, nicht älter als zwei Jahre, ruhiger Hintergrund."
+    },
+    {
+      "id": "current_role",
+      "points": 10,
+      "full_marks": "Eine Zeile Verantwortungsbereich, dann zwei bis drei Ergebnisse mit Zahlen. Aufgaben ('zuständig für') sind keine Ergebnisse."
+    },
+    {
+      "id": "experience_depth",
+      "points": 8,
+      "full_marks": "Die letzten zwei Stationen ausführlich, alles älter als zehn Jahre auf je eine Zeile verdichtet."
+    },
+    {
+      "id": "skills",
+      "points": 6,
+      "full_marks": "Die Top-3-Kenntnisse sind die drei, für die du engagiert werden willst, und sind bestätigt. Die anderen 47 sind Rauschen."
+    },
+    {
+      "id": "recommendations",
+      "points": 8,
+      "full_marks": "Mindestens drei erhaltene Empfehlungen aus den letzten zwei Jahren, jede mit konkretem Ergebnis statt Charakterlob."
+    },
+    {
+      "id": "activity",
+      "points": 10,
+      "full_marks": "In den letzten sieben Tagen gepostet oder kommentiert. Ein leerer Aktivitätsbereich wirkt wie ein verlassenes Profil."
+    },
+    {
+      "id": "contact",
+      "points": 6,
+      "full_marks": "Eigene Profil-URL, funktionierende E-Mail oder Buchungslink in den Kontaktinfos, bei geschäftlicher Nutzung ein Impressum-Link, gleicher Handle wie auf anderen Plattformen."
+    }
+  ]
+}

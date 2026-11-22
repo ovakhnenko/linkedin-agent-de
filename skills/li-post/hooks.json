@@ -1,0 +1,182 @@
+{
+  "version": "1.0-de",
+  "note": "21 Hook-Formeln. Zeile 1 eines LinkedIn-Posts ist das ganze Spiel: der Feed kürzt nach etwa 210 Zeichen am Desktop und 140 mobil vor 'mehr anzeigen', der Hook muss allein überleben. Deutsche Wörter sind lang, also kürzer formulieren als im Englischen. Jede Formel hat Vorlage, Beispiel, Zweck und den typischen Fehler.",
+  "rules": [
+    "Eine Idee pro Hook. Braucht er ein Komma mit zweitem Gedanken, sind es zwei Posts.",
+    "Zeile 2 ist kein Hook, sondern die Auflösung von Zeile 1. Nie für Einleitung verschwenden.",
+    "Kein Fragezeichen in Zeile 1, außer die Frage ist so konkret, dass nur du sie stellen kannst.",
+    "Zahlen schlagen Adjektive. '4.200 €' schlägt 'eine Menge Geld' immer.",
+    "Funktioniert der Hook auch mit dem Namen einer anderen Person darunter, ist es nicht dein Hook.",
+    "Anrede (Du/Sie) aus voice.md, nie gemischt."
+  ],
+  "hooks": [
+    {
+      "id": 1,
+      "name": "Gegenthese",
+      "template": "Alle sagen {gängiger Rat}. Nach {konkrete Erfahrung} halte ich das für falsch.",
+      "example": "Alle sagen, man soll täglich posten. Ich habe ein Jahr lang 4x pro Woche gepostet und jeden Täglich-Poster in meiner Nische überholt.",
+      "best_for": "Eine Haltung etablieren. Höchste Kommentarquote aller Formeln.",
+      "trap": "Gegen etwas sein, das niemand glaubt. Die Überzeugung muss wirklich verbreitet sein."
+    },
+    {
+      "id": 2,
+      "name": "Zahlen-Enthüllung",
+      "template": "Ich habe {N} {Tage/Wochen} lang {etwas getan}. Das ist wirklich passiert.",
+      "example": "400 kalte Nachrichten in 30 Tagen. 11 Antworten. 2 Kunden.",
+      "best_for": "Experimente, Challenges, alles mit zählbarem Ergebnis.",
+      "trap": "Die Zahl verstecken. Sie gehört in Zeile 1, sonst bringt die Formel nichts."
+    },
+    {
+      "id": 3,
+      "name": "Fehler-Geständnis",
+      "template": "{Konkreter Preis} hat mich {ein Fehler} gekostet.",
+      "example": "18.000 € hat mich letzten März ein fehlender Vertrag gekostet.",
+      "best_for": "Vertrauen. Leute teilen die Posts, in denen du schlecht aussiehst.",
+      "trap": "Ein falsch-bescheidener Fehler. 'Ich bin zu perfektionistisch' liest sich als Angeberei."
+    },
+    {
+      "id": 4,
+      "name": "Vorher / Nachher",
+      "template": "Vor {Zeitraum} habe ich {Tiefpunkt}. Heute {Hochpunkt}. Den Unterschied hat {eine Sache} gemacht.",
+      "example": "Vor 18 Monaten habe ich Angebote um 2 Uhr nachts geschrieben. Heute schicke ich sie in 6 Minuten raus. Eine Vorlage.",
+      "best_for": "Beweis, dass du den Weg gegangen bist, den der Leser gehen will.",
+      "trap": "Dreiteilige Verwandlungen. Nenn einen Hebel, sonst glaubt man dir nicht."
+    },
+    {
+      "id": 5,
+      "name": "Listen-Versprechen",
+      "template": "{N} Dinge, die mir vor {Meilenstein} gern jemand gesagt hätte.",
+      "example": "7 Dinge, die mir vor meiner ersten Einstellung gern jemand gesagt hätte.",
+      "best_for": "Speichern. Höchste Speicherrate der 21, und LinkedIn gewichtet das stark.",
+      "trap": "N über 10. Niemand glaubt dir 15 gute, und du hast sie nicht."
+    },
+    {
+      "id": 6,
+      "name": "Insider-Wissen",
+      "template": "Nach {N} Jahren {Tätigkeit}: der Teil, der in keiner {Stellenanzeige/Schulung/Präsentation} steht.",
+      "example": "Nach 9 Jahren im Agenturvertrieb: der Teil, der in keiner Stellenanzeige steht.",
+      "best_for": "Fundierte Einschätzungen. Funktioniert nur, wenn die Jahre echt sind.",
+      "trap": "Ein Geheimnis versprechen und Allgemeinwissen liefern. Die Kommentare sagen es dir."
+    },
+    {
+      "id": 7,
+      "name": "Ansage",
+      "template": "Wenn du immer noch {veraltete Praxis}, hör auf.",
+      "example": "Wenn du deine LinkedIn-Posts immer noch direkt im LinkedIn-Editor schreibst, hör auf.",
+      "best_for": "Kurze Posts mit einer Anweisung. Am schnellsten geschrieben.",
+      "trap": "Etwas anprangern, das niemand macht. Oder schlimmer: das eigene Publikum von oben herab."
+    },
+    {
+      "id": 8,
+      "name": "Fragefalle",
+      "template": "{Konkretes Szenario mit echtem Preis}. Was machst du?",
+      "example": "Dein bester Kunde will 40 % Rabatt und deutet an, dass er sonst geht. Was machst du?",
+      "best_for": "Kommentarmenge. Auf Szenarien antworten Leute, 'Was meint ihr?' ignorieren sie.",
+      "trap": "Eine Frage mit offensichtlicher Antwort. Es braucht eine echte Weggabelung."
+    },
+    {
+      "id": 9,
+      "name": "Kaltstart mit Zitat",
+      "template": "\"{Ein Satz Dialog}\"\n\n{Wer ihn gesagt hat, wann, und warum er zählte}.",
+      "example": "\"Wir gehen mit jemand Günstigerem.\"\n\nDie Mail kam 40 Minuten, nachdem ich mein bestes Angebot des Jahres verschickt hatte.",
+      "best_for": "Lange Erzählposts. Höchste Verweildauer.",
+      "trap": "Dialog, den niemand so sagen würde. Nimm den echten Satz, auch die hässlichen Teile."
+    },
+    {
+      "id": 10,
+      "name": "Der Beleg",
+      "template": "{Screenshot oder harte Zahl}. {Ein Satz Kontext}.",
+      "example": "3 Kunden, 11 Tage, kein einziger Call. Das ist die genaue Abfolge.",
+      "best_for": "Alles, was du belegen kannst. Mit Bild verdoppelt sich die Reichweite ungefähr.",
+      "trap": "Ein Beleg ohne Geschichte. Die Zahl öffnet die Tür, die Geschichte ist der Raum."
+    },
+    {
+      "id": 11,
+      "name": "Mythos widerlegen",
+      "template": "{Beliebte Erklärung} ist nicht der Grund, warum {schlechtes Ergebnis}.",
+      "example": "Der Algorithmus ist nicht der Grund, warum deine Posts sterben.",
+      "best_for": "Neu einordnen. Bereitet die echte Ursache in Zeile 3 vor.",
+      "trap": "Den Mythos widerlegen und nie den Ersatz nennen. Immer nennen."
+    },
+    {
+      "id": 12,
+      "name": "Der Vergleich",
+      "template": "{Teure Option} gegen {günstige Option}. {Überraschendes Urteil}.",
+      "example": "12.000 € Markenagentur gegen ein 20-€-Tool und ein Wochenende. Das Wochenende hat gewonnen.",
+      "best_for": "Tool- und Prozess-Posts. Sehr hohe Teilungsrate.",
+      "trap": "Ein unfairer Vergleich. Zugeben, was die teure Option wirklich besser kann."
+    },
+    {
+      "id": 13,
+      "name": "Erlaubnis",
+      "template": "Du darfst {etwas, wofür sich der Leser schuldig fühlt}.",
+      "example": "Du darfst Aufträge ablehnen, die gut bezahlt sind und dich unglücklich machen.",
+      "best_for": "Reichweite über die Nische hinaus. Diese Posts reisen weiter als taktische.",
+      "trap": "Allgemeines Self-Care. Es muss zum Arbeitsalltag deines Lesers passen."
+    },
+    {
+      "id": 14,
+      "name": "Musterbruch",
+      "template": "{Ein Wort oder ein Satz mit drei Wörtern. Punkt.}",
+      "example": "Ich wurde gekündigt.",
+      "best_for": "Den Scroll stoppen. Der Weißraum macht die Arbeit.",
+      "trap": "Zu oft. Einmal im Monat. Jeder Post so begonnen wirkt wie ein Tick."
+    },
+    {
+      "id": 15,
+      "name": "Die Warnung",
+      "template": "{Gängige Praxis} kostet dich still und leise {etwas, das ihnen wichtig ist}.",
+      "example": "Dein 'kurzer Abstimmungstermin' kostet dich still und leise sechs Stunden pro Woche.",
+      "best_for": "Problembewusstes Publikum, das Ursache und Preis noch nicht verbunden hat.",
+      "trap": "Angst ohne Ausweg. Die Lösung gehört in denselben Post."
+    },
+    {
+      "id": 16,
+      "name": "Gut gegen sehr gut",
+      "template": "Gute {Rolle} {tun X}. Sehr gute {Rolle} {tun Y}.",
+      "example": "Gute Verkäufer beantworten die Frage. Sehr gute fragen, warum sie gestellt wurde.",
+      "best_for": "Zitierfähige Einzeiler. Screenshot-Köder.",
+      "trap": "Eine Unterscheidung, die eigentlich nur 'streng dich mehr an' heißt. Y muss eine andere Handlung sein."
+    },
+    {
+      "id": 17,
+      "name": "Zeitanker",
+      "template": "{Aufgabe} hat mich früher {lange Zeit} gekostet. Heute {kurze Zeit}.",
+      "example": "Eine Woche Posts hat mich früher 5 Stunden gekostet. Heute 20 Minuten.",
+      "best_for": "Tool-, System- und Automatisierungs-Posts. Die stärkste Hook-Form für eine Anleitung.",
+      "trap": "Ein unglaubwürdiges Verhältnis. 5 Stunden auf 20 Minuten trägt. 5 Stunden auf 8 Sekunden nicht."
+    },
+    {
+      "id": 18,
+      "name": "Die unbeliebte Regel",
+      "template": "Ich {weithin akzeptierte Praxis} nicht. Nie. Und zwar deshalb.",
+      "example": "Ich mache keine Erstgespräche. Nie.",
+      "best_for": "Positionierung. Zieht die richtigen Kunden an, indem es die falschen abstößt.",
+      "trap": "Eine Regel, die du ständig brichst. Irgendwer in den Kommentaren weiß es."
+    },
+    {
+      "id": 19,
+      "name": "Neugierlücke",
+      "template": "Der/die/das {Superlativ} {Sache}, die ich je {Verb}, {brach die offensichtliche Regel}.",
+      "example": "Meine beste Einstellung ist im Vorstellungsgespräch durchgefallen.",
+      "best_for": "Einstiege, die das 'mehr anzeigen' erzwingen.",
+      "trap": "Eine Lücke, die du nie schließt. Spätestens in Zeile 4 auflösen, sonst ist es Clickbait."
+    },
+    {
+      "id": 20,
+      "name": "Der Abschied",
+      "template": "Ich habe {wertvolle Sache} {gekündigt/beendet/gelöscht}. {Ergebnis}.",
+      "example": "Im Januar habe ich meinem bestzahlenden Kunden gekündigt. Der Umsatz liegt 30 % höher.",
+      "best_for": "Werte-Posts mit Geschäftsergebnis. Sehr hohes Engagement.",
+      "trap": "Ein Abschied ohne Preis. Sag, was es wirklich gekostet hat, sonst ist es Theater."
+    },
+    {
+      "id": 21,
+      "name": "Direkter Wert",
+      "template": "Hier ist genau {das Artefakt}, mit dem ich {konkretes Ergebnis}. Nimm es mit.",
+      "example": "Hier ist die 4-Zeilen-Mail, mit der ich 3 tote Deals wiederbelebt habe. Nimm sie mit.",
+      "best_for": "Lead-Magneten und Kommentiere-für-den-Link-Posts. Höchste Conversion der 21.",
+      "trap": "Leute um etwas bitten lassen, das du einfach hättest posten können. Verschenk das Artefakt im Post."
+    }
+  ]
+}

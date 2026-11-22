@@ -1,0 +1,1033 @@
+{
+  "version": "1.0-de",
+  "lang": "de",
+  "note": "German lexicon used by humanize.py and detect.py. 'stem*' matches any inflection and carries the suffix over; replace null = flag only, never auto-replaced (German word order/case). Noun replacements must keep the grammatical gender (der Mehrwert -> der Nutzen). Edit freely - it is meant to be yours.",
+  "invisible": [
+    {
+      "cp": "U+200B",
+      "name": "ZERO WIDTH SPACE",
+      "action": "delete"
+    },
+    {
+      "cp": "U+200C",
+      "name": "ZERO WIDTH NON-JOINER",
+      "action": "delete"
+    },
+    {
+      "cp": "U+200D",
+      "name": "ZERO WIDTH JOINER",
+      "action": "delete"
+    },
+    {
+      "cp": "U+2060",
+      "name": "WORD JOINER",
+      "action": "delete"
+    },
+    {
+      "cp": "U+FEFF",
+      "name": "ZERO WIDTH NO-BREAK SPACE / BOM",
+      "action": "delete"
+    },
+    {
+      "cp": "U+00AD",
+      "name": "SOFT HYPHEN",
+      "action": "delete"
+    },
+    {
+      "cp": "U+180E",
+      "name": "MONGOLIAN VOWEL SEPARATOR",
+      "action": "delete"
+    },
+    {
+      "cp": "U+061C",
+      "name": "ARABIC LETTER MARK",
+      "action": "delete"
+    },
+    {
+      "cp": "U+200E",
+      "name": "LEFT-TO-RIGHT MARK",
+      "action": "delete"
+    },
+    {
+      "cp": "U+200F",
+      "name": "RIGHT-TO-LEFT MARK",
+      "action": "delete"
+    },
+    {
+      "cp": "U+E0000-U+E007F",
+      "name": "TAG CHARACTERS (invisible ASCII smuggling)",
+      "action": "delete"
+    },
+    {
+      "cp": "U+00A0",
+      "name": "NO-BREAK SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+202F",
+      "name": "NARROW NO-BREAK SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+2009",
+      "name": "THIN SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+2007",
+      "name": "FIGURE SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+2003",
+      "name": "EM SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+2002",
+      "name": "EN SPACE",
+      "action": "space"
+    }
+  ],
+  "typographic": [
+    {
+      "from": "—",
+      "name": "EM DASH",
+      "to": " - "
+    },
+    {
+      "from": "–",
+      "name": "EN DASH",
+      "to": "-"
+    },
+    {
+      "from": "‘",
+      "name": "LEFT SINGLE QUOTE",
+      "to": "'"
+    },
+    {
+      "from": "’",
+      "name": "RIGHT SINGLE QUOTE",
+      "to": "'"
+    },
+    {
+      "from": "“",
+      "name": "LEFT DOUBLE QUOTE",
+      "to": "\""
+    },
+    {
+      "from": "”",
+      "name": "RIGHT DOUBLE QUOTE",
+      "to": "\""
+    },
+    {
+      "from": "…",
+      "name": "HORIZONTAL ELLIPSIS",
+      "to": "..."
+    },
+    {
+      "from": "′",
+      "name": "PRIME",
+      "to": "'"
+    },
+    {
+      "from": "·",
+      "name": "MIDDLE DOT",
+      "to": "-"
+    },
+    {
+      "from": "•",
+      "name": "BULLET",
+      "to": "-"
+    },
+    {
+      "from": "→",
+      "name": "RIGHTWARDS ARROW",
+      "to": "->"
+    },
+    {
+      "from": "„",
+      "name": "GERMAN LOW DOUBLE QUOTE",
+      "to": "\""
+    },
+    {
+      "from": "‚",
+      "name": "GERMAN LOW SINGLE QUOTE",
+      "to": "'"
+    },
+    {
+      "from": "»",
+      "name": "RIGHT GUILLEMET",
+      "to": "\""
+    },
+    {
+      "from": "«",
+      "name": "LEFT GUILLEMET",
+      "to": "\""
+    }
+  ],
+  "words": [
+    {
+      "find": "nahtlos*",
+      "replace": "reibungslos*",
+      "family": "adjectives"
+    },
+    {
+      "find": "maßgeblich*",
+      "replace": "wichtig*",
+      "family": "adjectives"
+    },
+    {
+      "find": "essenziell*",
+      "replace": "wichtig*",
+      "family": "adjectives"
+    },
+    {
+      "find": "essentiell*",
+      "replace": "wichtig*",
+      "family": "adjectives"
+    },
+    {
+      "find": "innovativ*",
+      "replace": "neu*",
+      "family": "adjectives"
+    },
+    {
+      "find": "bahnbrechend*",
+      "replace": "neu*",
+      "family": "adjectives"
+    },
+    {
+      "find": "revolutionär*",
+      "replace": "neu*",
+      "family": "adjectives"
+    },
+    {
+      "find": "wegweisend*",
+      "replace": "wichtig*",
+      "family": "adjectives"
+    },
+    {
+      "find": "tiefgreifend*",
+      "replace": "groß*",
+      "family": "adjectives"
+    },
+    {
+      "find": "robust*",
+      "replace": "stabil*",
+      "family": "adjectives"
+    },
+    {
+      "find": "vielschichtig*",
+      "replace": "kompliziert*",
+      "family": "adjectives"
+    },
+    {
+      "find": "facettenreich*",
+      "replace": "vielseitig*",
+      "family": "adjectives"
+    },
+    {
+      "find": "akribisch*",
+      "replace": "sorgfältig*",
+      "family": "adjectives"
+    },
+    {
+      "find": "maßgeschneidert*",
+      "replace": "angepasst*",
+      "family": "adjectives"
+    },
+    {
+      "find": "zielführend*",
+      "replace": "sinnvoll*",
+      "family": "adjectives"
+    },
+    {
+      "find": "umfassend*",
+      "replace": "vollständig*",
+      "family": "adjectives"
+    },
+    {
+      "find": "ganzheitlich*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "zukunftsweisend*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "transformativ*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "unvergleichlich*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "unschätzbar*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "spannend*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "beeindruckend*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "bemerkenswert*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "inspirierend*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "dynamisch*",
+      "replace": null,
+      "family": "adjectives"
+    },
+    {
+      "find": "Gamechanger",
+      "replace": "Wendepunkt",
+      "family": "nouns"
+    },
+    {
+      "find": "Game-Changer",
+      "replace": "Wendepunkt",
+      "family": "nouns"
+    },
+    {
+      "find": "Game Changer",
+      "replace": "Wendepunkt",
+      "family": "nouns"
+    },
+    {
+      "find": "Paradigmenwechsel",
+      "replace": "Umbruch",
+      "family": "nouns"
+    },
+    {
+      "find": "Eckpfeiler",
+      "replace": "Grundstein",
+      "family": "nouns"
+    },
+    {
+      "find": "Grundpfeiler",
+      "replace": "Grundstein",
+      "family": "nouns"
+    },
+    {
+      "find": "Mehrwert",
+      "replace": "Nutzen",
+      "family": "nouns"
+    },
+    {
+      "find": "Mindset",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "Learnings",
+      "replace": "Erkenntnisse",
+      "family": "nouns"
+    },
+    {
+      "find": "Impact",
+      "replace": "Effekt",
+      "family": "nouns"
+    },
+    {
+      "find": "Deep Dive",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "Synergie*",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "Ökosystem*",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "Leuchtturm*",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "Herzensangelegenheit*",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "Meilenstein*",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "Wandel",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "Takeaways",
+      "replace": null,
+      "family": "nouns"
+    },
+    {
+      "find": "revolutionieren",
+      "replace": "verändern",
+      "family": "verbs"
+    },
+    {
+      "find": "revolutioniert",
+      "replace": "verändert",
+      "family": "verbs"
+    },
+    {
+      "find": "transformieren",
+      "replace": "verändern",
+      "family": "verbs"
+    },
+    {
+      "find": "transformiert",
+      "replace": "verändert",
+      "family": "verbs"
+    },
+    {
+      "find": "unterstreicht",
+      "replace": "zeigt",
+      "family": "verbs"
+    },
+    {
+      "find": "unterstreichen",
+      "replace": "zeigen",
+      "family": "verbs"
+    },
+    {
+      "find": "eintauchen",
+      "replace": null,
+      "family": "verbs"
+    },
+    {
+      "find": "tauchen wir ein",
+      "replace": null,
+      "family": "verbs"
+    },
+    {
+      "find": "befähig*",
+      "replace": null,
+      "family": "verbs"
+    },
+    {
+      "find": "entfessel*",
+      "replace": null,
+      "family": "verbs"
+    },
+    {
+      "find": "leverage*",
+      "replace": null,
+      "family": "verbs"
+    },
+    {
+      "find": "leveragen",
+      "replace": null,
+      "family": "verbs"
+    },
+    {
+      "find": "navigieren",
+      "replace": null,
+      "family": "verbs"
+    },
+    {
+      "find": "darüber hinaus",
+      "replace": "außerdem",
+      "family": "connectives"
+    },
+    {
+      "find": "des Weiteren",
+      "replace": "außerdem",
+      "family": "connectives"
+    },
+    {
+      "find": "nichtsdestotrotz",
+      "replace": "trotzdem",
+      "family": "connectives"
+    },
+    {
+      "find": "nichtsdestoweniger",
+      "replace": "trotzdem",
+      "family": "connectives"
+    },
+    {
+      "find": "folglich",
+      "replace": "also",
+      "family": "connectives"
+    },
+    {
+      "find": "letztendlich",
+      "replace": "am Ende",
+      "family": "connectives"
+    },
+    {
+      "find": "im Wesentlichen",
+      "replace": "im Grunde",
+      "family": "connectives"
+    },
+    {
+      "find": "zweifellos",
+      "replace": "klar",
+      "family": "connectives"
+    },
+    {
+      "find": "ohne Zweifel",
+      "replace": "klar",
+      "family": "connectives"
+    },
+    {
+      "find": "nicht zuletzt",
+      "replace": "auch",
+      "family": "connectives"
+    },
+    {
+      "find": "in Bezug auf",
+      "replace": "bei",
+      "family": "connectives"
+    },
+    {
+      "find": "im Hinblick auf",
+      "replace": "bei",
+      "family": "connectives"
+    },
+    {
+      "find": "hinsichtlich",
+      "replace": "bei",
+      "family": "connectives"
+    },
+    {
+      "find": "eine Vielzahl von",
+      "replace": null,
+      "family": "connectives"
+    },
+    {
+      "find": "eine Vielzahl an",
+      "replace": null,
+      "family": "connectives"
+    },
+    {
+      "find": "eine Fülle von",
+      "replace": null,
+      "family": "connectives"
+    },
+    {
+      "find": "eine Fülle an",
+      "replace": null,
+      "family": "connectives"
+    },
+    {
+      "find": "zusammenfassend",
+      "replace": "kurz gesagt",
+      "family": "connectives"
+    },
+    {
+      "find": "in diesem Sinne",
+      "replace": "",
+      "family": "connectives"
+    },
+    {
+      "find": "Last but not least",
+      "replace": "Und zuletzt",
+      "family": "connectives"
+    },
+    {
+      "find": "somit",
+      "replace": null,
+      "family": "connectives"
+    }
+  ],
+  "phrases": [
+    {
+      "find": "in der heutigen schnelllebigen Welt",
+      "replace": "heute",
+      "family": "openers"
+    },
+    {
+      "find": "in unserer schnelllebigen Welt",
+      "replace": "heute",
+      "family": "openers"
+    },
+    {
+      "find": "in der heutigen digitalen Welt",
+      "replace": "heute",
+      "family": "openers"
+    },
+    {
+      "find": "im heutigen digitalen Zeitalter",
+      "replace": "heute",
+      "family": "openers"
+    },
+    {
+      "find": "im digitalen Zeitalter",
+      "replace": "heute",
+      "family": "openers"
+    },
+    {
+      "find": "sich ständig wandelnden",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "sich stetig verändernden",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Hand aufs Herz:",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Hand aufs Herz",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Seien wir ehrlich:",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Seien wir ehrlich",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Es ist kein Geheimnis, dass",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Wir alle kennen das:",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Wir alle kennen das.",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Wer kennt es nicht?",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Stell dir vor",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Stellen Sie sich vor",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Stellt euch vor",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Ich freue mich, bekannt zu geben",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Ich freue mich sehr, euch mitteilen zu können",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Ich bin stolz, verkünden zu dürfen",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Ich bin unglaublich dankbar",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "hatte die Gelegenheit",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "hatte die Ehre",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Ohne weitere Umschweife",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Schnallt euch an.",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Schnall dich an.",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Spoiler-Alarm:",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Spoiler:",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Die harte Wahrheit ist:",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Die unbequeme Wahrheit:",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Fakt ist:",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Es ist erwähnenswert, dass",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Es ist wichtig zu beachten, dass",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "Zusammenfassend lässt sich sagen",
+      "replace": null,
+      "family": "openers"
+    },
+    {
+      "find": "In a nutshell",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Here's the thing",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "Lass das mal sacken.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Lasst das mal sacken.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Lies das nochmal.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Lies das noch einmal.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Die Wahl liegt bei dir.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Was denkt ihr?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Was meint ihr?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Wie seht ihr das?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Was sind eure Gedanken?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Was sind eure Gedanken dazu?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Was sind Ihre Gedanken dazu?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Schreibt es in die Kommentare!",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Schreibt es in die Kommentare.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Lasst es mich in den Kommentaren wissen!",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Lasst es mich in den Kommentaren wissen.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Speichere dir diesen Beitrag.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Speicher dir den Beitrag.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Wer ist dabei?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Denkanstoß",
+      "replace": null,
+      "family": "closers"
+    },
+    {
+      "find": "Und genau das ist der Punkt",
+      "replace": null,
+      "family": "closers"
+    },
+    {
+      "find": "am Ende des Tages",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "Let that sink in.",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "einen Unterschied machen",
+      "replace": "etwas bewirken",
+      "family": "calques"
+    },
+    {
+      "find": "macht einen Unterschied",
+      "replace": "bewirkt etwas",
+      "family": "calques"
+    },
+    {
+      "find": "ein Zeugnis für",
+      "replace": "ein Beweis für",
+      "family": "calques"
+    },
+    {
+      "find": "spielt eine entscheidende Rolle",
+      "replace": "ist wichtig",
+      "family": "calques"
+    },
+    {
+      "find": "spielt eine zentrale Rolle",
+      "replace": "ist wichtig",
+      "family": "calques"
+    },
+    {
+      "find": "spielen eine entscheidende Rolle",
+      "replace": "sind wichtig",
+      "family": "calques"
+    },
+    {
+      "find": "spielen eine zentrale Rolle",
+      "replace": "sind wichtig",
+      "family": "calques"
+    },
+    {
+      "find": "aufs nächste Level",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "auf das nächste Level",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "volles Potenzial",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "Potenzial entfalten",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "Mehrwert schaffen",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "Mehrwert bieten",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "meine Reise",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "unsere Reise",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "auf dieser Reise",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "kann nicht genug betont werden",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "nicht hoch genug eingeschätzt werden",
+      "replace": null,
+      "family": "calques"
+    },
+    {
+      "find": "move the needle",
+      "replace": null,
+      "family": "calques"
+    }
+  ],
+  "structures": [
+    {
+      "id": "nicht-um-sondern",
+      "regex": "(?i)\\bes geht nicht (?:nur |bloß )?um [^.!?\\n]{2,60}[,.] (?:sondern|es geht um)\\b",
+      "name": "\"Es geht nicht um X. Es geht um Y.\"",
+      "fix": "Lead with Y. The reversal is the tell."
+    },
+    {
+      "id": "nicht-nur-sondern-auch",
+      "regex": "(?i)\\bnicht nur\\b[^.!?\\n]{2,80}\\bsondern auch\\b",
+      "name": "\"Nicht nur X, sondern auch Y\"",
+      "fix": "Split into two sentences, or drop the weaker half."
+    },
+    {
+      "id": "ist-nicht-sondern",
+      "regex": "(?i)\\b(?:das|es|dies) ist nicht (?:einfach |nur |bloß )?[^.!?\\n]{2,50}[,.] (?:sondern|es ist|das ist)\\b",
+      "name": "\"Das ist nicht X, sondern Y\"",
+      "fix": "Say the one thing you actually mean. Delete the setup half."
+    },
+    {
+      "id": "rhetorische-frage",
+      "regex": "(?im)^\\s*(?:das ergebnis|der clou|der haken|das beste daran|der knackpunkt|die lösung|die antwort|das problem|und dann|warum)\\?\\s*$",
+      "name": "One-line rhetorical question (\"Das Ergebnis?\")",
+      "fix": "Answer it inline instead of staging a reveal."
+    },
+    {
+      "id": "staged-reveal",
+      "regex": "(?im)^\\s*(?:und das beste|die wahrheit|die realität|das geheimnis|mein learning|meine learnings|meine erkenntnis)\\s*:",
+      "name": "Staged reveal line (\"Die Wahrheit:\")",
+      "fix": "State the point. Skip the announcement."
+    },
+    {
+      "id": "hier-was-gelernt",
+      "regex": "(?i)\\b(?:hier (?:ist|sind),? was (?:ich|wir) (?:daraus )?gelernt|das (?:habe|hab) ich (?:daraus )?gelernt\\s*:)",
+      "name": "\"Hier ist, was ich gelernt habe\"",
+      "fix": "State the lesson. Skip the announcement."
+    },
+    {
+      "id": "triad",
+      "regex": "(?i)\\b[\\w-]+, [\\w-]+ und [\\w-]+\\.",
+      "name": "Rule-of-three triad (\"X, Y und Z.\")",
+      "fix": "Two items or four. Three is the model's default rhythm."
+    },
+    {
+      "id": "rocket",
+      "regex": "[🚀🔥💡✨🎯👇✅]",
+      "name": "Rocket / fire / bulb / sparkle / dart / point-down / check emoji",
+      "fix": "One emoji max, and not one of these."
+    },
+    {
+      "id": "hashtag-wall",
+      "regex": "(?:#[\\w-]+[ \\t]*){5,}",
+      "name": "Hashtag wall (5+)",
+      "fix": "Three hashtags max. LinkedIn stopped rewarding the wall."
+    },
+    {
+      "id": "als-ki",
+      "regex": "(?i)\\bals (?:ki|künstliche intelligenz|sprachmodell|ki-modell)\\b",
+      "name": "Model self-reference",
+      "fix": "Delete the sentence."
+    },
+    {
+      "id": "fazit-opener",
+      "regex": "(?im)^\\s*(?:fazit|zusammenfassend|abschließend|zum schluss|unterm strich)\\b",
+      "name": "Essay-closer opener (\"Fazit:\")",
+      "fix": "A post does not need a conclusion paragraph."
+    },
+    {
+      "id": "engagement-bait",
+      "regex": "(?im)(?:was (?:meint|denkt|sagt) ihr(?: dazu)?|wie seht ihr das|seht ihr das (?:auch )?so|wer kennt'?s|wer kennt das|stimmt ihr zu|hab(?:e)? ich recht|bin ich (?:der|die) einzige|was meinen sie(?: dazu)?|wie sehen sie das|eure meinung|agree|thoughts)\\s*\\??\\s*$",
+      "name": "Reflex engagement bait (\"Was meint ihr?\")",
+      "fix": "Ask a question only you could ask, about the specific thing above it."
+    },
+    {
+      "id": "exclaim",
+      "regex": "!{2,}",
+      "name": "Double exclamation mark",
+      "fix": "One, or none. German LinkedIn readers find it shouty."
+    }
+  ]
+}
