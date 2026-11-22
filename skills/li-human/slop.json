@@ -846,7 +846,7 @@
     },
     {
       "find": "am Ende des Tages",
-      "replace": "",
+      "replace": "am Ende",
       "family": "closers"
     },
     {

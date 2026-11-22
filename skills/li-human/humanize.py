@@ -215,15 +215,16 @@ def pass_lexical(text, lex):
             else:
                 new = _match_case(m.group(1), repl)
             if not new:
-                start = m.start()
-                at_line_start = start == 0 or text[:start].rstrip(" \t").endswith("\n") \
-                    or text[:start].strip() == ""
-                return LINE_START if at_line_start else ""
+                before = text[:m.start()].rstrip(" \t")
+                # Line start or sentence end: the next word has to be capitalised.
+                at_start = before == "" or before[-1] in "\n.!?"
+                return LINE_START if at_start else ""
             return new
 
         text = pattern.sub(sub, text)
     # Clean up after deletions.
     text = re.sub(r"[ \t]{2,}", " ", text)
+    text = re.sub(r",[ \t]*,", "", text)             # "Wir sind, <deleted>, fertig"
     text = re.sub(LINE_START + r"[ \t,;:]*([a-zäöü])", lambda m: m.group(1).upper(), text)
     text = text.replace(LINE_START, "")
     text = re.sub(r"(?m)^[ \t]*([,.;:])\s*", "", text)
@@ -322,7 +323,10 @@ def main():
     args = ap.parse_args()
 
     utf8_stdio()
-    raw = read_text(args.input)
+    try:
+        raw = read_text(args.input)
+    except OSError as e:
+        ap.error(f"cannot read {args.input}: {e.strerror}")
     lex = load_lexicon(args.lexicon)
     clean, report = humanize(raw, lex)
 

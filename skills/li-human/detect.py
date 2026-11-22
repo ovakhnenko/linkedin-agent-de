@@ -264,9 +264,12 @@ def main():
     with open(args.lexicon, encoding="utf-8") as fh:
         lex = json.load(fh)
 
-    targets = [(args.input, read_text(args.input))]
-    if args.compare:
-        targets.append((args.compare, read_text(args.compare)))
+    targets = []
+    for path in filter(None, (args.input, args.compare)):
+        try:
+            targets.append((path, read_text(path)))
+        except OSError as e:
+            ap.error(f"cannot read {path}: {e.strerror}")
 
     payload = []
     for name, text in targets:
