@@ -14,6 +14,9 @@ python3 detect.py entwurf.txt                             # bewerten, fünf Chec
 python3 detect.py entwurf.txt sauber.txt                  # Vorher/Nachher belegen
 ```
 
+Unter Windows heißt der Befehl meist `python` statt `python3` (`python3` ist dort
+oft nur ein Verweis auf den Microsoft Store). Ein- und Ausgabe sind immer UTF-8.
+
 Beide lesen `slop.json`, das deutsche Lexikon: rund 150 Floskeln, Wörter und
 Lehnübersetzungen, 17 unsichtbare Zeichenklassen, Typografie-Ersetzungen und
 13 Strukturmuster. Die Datei soll bearbeitet werden: Benutzt der Nutzer ein
@@ -40,7 +43,8 @@ Leerzeichen. Eine Tastatur erzeugt sie nicht, sie überleben Copy-Paste.
 **2. Typografie.** Geviertstrich und Gedankenstrich (` – `) werden zu ` - `,
 weil das ist, was Menschen tippen. „Deutsche“ und “englische” Anführungszeichen
 sowie »Guillemets« werden zu geraden, Auslassungspunkte zu drei Punkten,
-Aufzählungspunkte zu Bindestrichen.
+Aufzählungspunkte zu Bindestrichen. Der Mediopunkt im Wort (Kund·innen) bleibt
+stehen, weil er bewusst gendert.
 
 **3. Das Floskel-Lexikon.** "In der heutigen schnelllebigen Welt", "darüber
 hinaus", "letztendlich", "spielt eine entscheidende Rolle", "Lass das mal

@@ -68,6 +68,25 @@ def mask_abbr(text):
     return ORDINAL_RE.sub(lambda m: m.group(1) + MASK, text)
 
 
+def utf8_stdio():
+    """Windows consoles and pipes default to cp125x, which cannot encode ä/ö/ü for all locales."""
+    for stream in (sys.stdin, sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
+
+
+def read_text(path):
+    """Read a file or stdin ("-"). UTF-8 (with or without BOM) first, cp1252 as fallback."""
+    if path == "-":
+        return sys.stdin.read()
+    with open(path, "rb") as fh:
+        data = fh.read()
+    try:
+        return data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return data.decode("cp1252", errors="replace")
+
+
 def clamp(n):
     return max(0.0, min(100.0, n))
 
@@ -241,12 +260,13 @@ def main():
     ap.add_argument("--lexicon", default=LEX)
     args = ap.parse_args()
 
-    lex = json.load(open(args.lexicon, encoding="utf-8"))
-    read = lambda p: sys.stdin.read() if p == "-" else open(p, encoding="utf-8").read()
+    utf8_stdio()
+    with open(args.lexicon, encoding="utf-8") as fh:
+        lex = json.load(fh)
 
-    targets = [(args.input, read(args.input))]
+    targets = [(args.input, read_text(args.input))]
     if args.compare:
-        targets.append((args.compare, read(args.compare)))
+        targets.append((args.compare, read_text(args.compare)))
 
     payload = []
     for name, text in targets:
@@ -260,9 +280,9 @@ def main():
 
     if args.json:
         print(json.dumps(payload if args.compare else payload[0], indent=2, ensure_ascii=False))
-        return
+        sys.exit(0 if payload[-1]["verdict"] == "PASS" else 1)
 
-    for (name, text), p in zip(targets, payload):
+    for name, text in targets:
         results, overall, verdict = run(text, lex)
         render(results, overall, verdict, label=os.path.basename(name) if args.compare else None)
     if args.compare:

@@ -63,6 +63,25 @@ def sentence_lengths(text):
     return [len(s.split()) for s in SENT_RE.findall(mask_abbr(text)) if len(s.split()) > 2]
 
 
+def utf8_stdio():
+    """Windows consoles and pipes default to cp125x, which cannot encode ä/ö/ü for all locales."""
+    for stream in (sys.stdin, sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
+
+
+def read_text(path):
+    """Read a file or stdin ("-"). UTF-8 (with or without BOM) first, cp1252 as fallback."""
+    if path == "-":
+        return sys.stdin.read()
+    with open(path, "rb") as fh:
+        data = fh.read()
+    try:
+        return data.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return data.decode("cp1252", errors="replace")
+
+
 def load_lexicon(path=LEX):
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)
@@ -144,6 +163,14 @@ def pass_typographic(text, lex):
         elif ch == "–":
             text = re.sub(r"(?<=\d)[ \t]*–[ \t]*(?=\d)", "-", text)   # 5–10 -> 5-10
             text = re.sub(r"[ \t]*–[ \t]*", " - ", text)                # Gedankenstrich
+        elif ch == "·":
+            # Gender point inside a word (Kund·innen) is deliberate; only free-standing dots go.
+            n = len(re.findall(r"(?<!\w)·|·(?!\w)", text))
+            if not n:
+                hits.pop()
+                continue
+            hits[-1]["count"] = n
+            text = re.sub(r"(?<!\w)·|·(?!\w)", entry["to"], text)
         else:
             text = text.replace(ch, entry["to"])
     text = re.sub(r"(?m)^ - ", "- ", text)          # dash at line start = bullet
@@ -294,7 +321,8 @@ def main():
     ap.add_argument("--lexicon", default=LEX, help="path to slop.json")
     args = ap.parse_args()
 
-    raw = sys.stdin.read() if args.input == "-" else open(args.input, encoding="utf-8").read()
+    utf8_stdio()
+    raw = read_text(args.input)
     lex = load_lexicon(args.lexicon)
     clean, report = humanize(raw, lex)
 

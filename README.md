@@ -80,7 +80,7 @@ python3 skills/li-human/humanize.py entwurf.txt -o sauber.txt --report
 python3 skills/li-human/detect.py entwurf.txt sauber.txt
 ```
 
-Keine Abhängigkeiten, läuft lokal. Die fünf Checks sind lokale Heuristiken,
+Unter Windows `python` statt `python3`. Keine Abhängigkeiten, läuft lokal. Die fünf Checks sind lokale Heuristiken,
 nicht GPTZero, Originality & Co., und versprechen deren Urteil nicht.
 
 ## Das Kleingedruckte
